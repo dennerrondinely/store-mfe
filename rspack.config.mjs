@@ -66,6 +66,7 @@ export default env => {
         dts: false,
         exposes: {
           './Store': './src/store/transactionsStore',
+          './Toggle': './src/store/togglesStore',
         },
         shared: Object.fromEntries(
           Object.entries(pkg.dependencies).map(([dep, { version }]) => {
