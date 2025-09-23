@@ -65,7 +65,7 @@ export default env => {
         filename: 'Store.container.bundle',
         dts: false,
         exposes: {
-          './Store': './src/store/index.ts',
+          './Store': './src/index.ts',
         },
         shared: Object.fromEntries(
           Object.entries(pkg.dependencies).map(([dep, { version }]) => {
