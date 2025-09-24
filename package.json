@@ -16,12 +16,14 @@
     "update:firebase": "node -r dotenv/config updateFirebase.js"
   },
   "dependencies": {
+    "@react-native-vector-icons/material-icons": "^12.3.0",
     "@react-native/new-app-screen": "0.80.0",
     "dotenv": "^17.2.1",
     "firebase": "^12.3.0",
-    "firebase-admin": "^13.4.0",
     "react": "19.1.0",
     "react-native": "0.80.0",
+    "react-native-dotenv": "^3.4.11",
+    "react-native-paper": "^5.14.5",
     "react-native-safe-area-context": "^5.5.2",
     "zustand": "^5.0.8"
   },
@@ -44,6 +46,7 @@
     "@types/react": "^19.1.0",
     "@types/react-test-renderer": "^19.1.0",
     "eslint": "^8.19.0",
+    "firebase-admin": "^13.5.0",
     "http-server": "^14.1.1",
     "jest": "^29.6.3",
     "prettier": "2.8.8",
