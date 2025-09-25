@@ -18,7 +18,7 @@ type TogglesContextType = {
 
 const TogglesContext = createContext<TogglesContextType | undefined>(undefined);
 
-export const TogglesProvider = ({ children }: { children: ReactNode }) => {
+const TogglesProvider = ({ children }: { children: ReactNode }) => {
   const { data: toggles, loading } = useFirestoreCollection<Toggle>('toggles');
   const { setToggles } = useToggleStore();
 
@@ -46,3 +46,5 @@ export const useToggles = () => {
   }
   return context;
 };
+
+export default TogglesProvider;
